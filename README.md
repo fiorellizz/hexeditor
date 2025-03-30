@@ -1,6 +1,6 @@
-# Editor Hexadecimal para Oficinas 🚗🔧
+# Editor Hexadecimal 🔧
 
-Este projeto é um **editor hexadecimal de arquivos binários**, desenvolvido em **Django**, voltado para oficinas que precisam visualizar e editar bytes de arquivos.
+Este projeto é um **editor hexadecimal de arquivos binários**, desenvolvido em **Django**, voltado para usuários que precisam visualizar e editar bytes de arquivos.
 
 ## 📌 Funcionalidades
 - **Upload de Arquivos**: Permite o envio de arquivos binários para edição.

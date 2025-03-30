@@ -1,0 +1,13 @@
+<h2>Hex Viewer: {{ arquivo.nome }}</h2>
+
+<!-- Link para voltar -->
+<!-- <a href="{% url 'editor:upload' %}">Voltar</a> -->
+
+<!-- Link para download do arquivo -->
+<a href="{% url 'editor:download' arquivo.id %}">Download Arquivo</a>
+
+<pre>
+    {% for linha in hex_view %}
+        {{ linha.endereco }}  {{ linha.hex|safe }}  {{ linha.ascii }}
+    {% endfor %}
+</pre>

@@ -1,0 +1,13 @@
+<h2>Editar Byte</h2>
+<p><strong>Arquivo:</strong> {{ arquivo.nome }}</p>
+<p><strong>Endereço:</strong> 0x{{ offset }}</p>
+<p><strong>Valor Atual:</strong> {{ valor_atual }}</p>
+
+<form method="post">
+    {% csrf_token %}
+    <label> Novo Valor (Hexadecimal): </label>
+    <input type="text" name="novo_valor" maxlength="2" required pattern="[0-9A-Fa-f]{2}">
+    <button type="submit">Salvar</button>
+</form>
+
+<a href="{% url 'editor:visualizar' arquivo.id %}">Voltar</a>

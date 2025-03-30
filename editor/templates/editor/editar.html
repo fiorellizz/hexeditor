@@ -1,0 +1,9 @@
+<h2>Editar Arquivo: {{ arquivo.nome }}</h2>
+<form method="post">
+    {% csrf_token %}
+    <label>Endereço (hex):</label>
+    <input type="text" name="offset" required>
+    <label>Valor (hex):</label>
+    <input type="text" name="valor" required>
+    <button type="submit">Salvar</button>
+</form>
